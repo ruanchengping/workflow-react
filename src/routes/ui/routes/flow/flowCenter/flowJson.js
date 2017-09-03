@@ -1,0 +1,194 @@
+import React from 'react';
+// import { Icon,Popconfirm} from 'vdap-ui';
+
+const flowJson = {
+  treeData:[{
+    "title":"协和医院",
+    "key":"0",
+    "isLeaf":false,
+    "id":"0",
+    "children":
+      [
+        {
+        "title":"物流",
+        "key":"0-0",
+        "isLeaf":false,
+        "id":"0-0",
+        "children":
+          [{
+          "title":"采购",
+          "key":"0-0-0",
+          "isLeaf":true,
+          "id":"0-0-0",
+          },{
+          "title":"库存",
+          "key":"0-0-1",
+          "isLeaf":true,
+          "id":"0-0-1",
+          }]
+        },{
+          "title":"财务",
+          "key":"0-1",
+          "isLeaf":false,
+          "id":"0-1",
+          "children":
+          [
+            {
+            "title":"报销",
+            "key":"0-1-0",
+            "isLeaf":true,
+            "id":"0-1-0",
+            },{
+            "title":"借款",
+            "key":"0-1-1",
+            "isLeaf":true,
+            "id":"0-1-1",
+            }
+          ]
+        }
+      ]
+    }],
+serviceTree:[{
+    "title":"协和医院",
+    "key":"0",
+    "isLeaf":false,
+    "id":"0",
+    "children":
+      [
+        {
+        "title":"物流管理",
+        "key":"0-0",
+        "isLeaf":false,
+        "id":"0-0",
+        "children":
+          [{
+          "title":"库存",
+          "key":"0-0-0",
+          "isLeaf":true,
+          "id":"0-0-0",
+          }]
+        },{
+          "title":"采购管理",
+          "key":"0-2",
+          "isLeaf":true,
+          "id":"0-2",
+        },{
+          "title":"财务管理",
+          "key":"0-1",
+          "isLeaf":false,
+          "id":"0-1",
+          "children":
+          [
+            {
+            "title":"报销",
+            "key":"0-1-0",
+            "isLeaf":true,
+            "id":"0-1-0",
+            },{
+            "title":"借款",
+            "key":"0-1-1",
+            "isLeaf":true,
+            "id":"0-1-1",
+            }
+          ]
+        },{
+          "title":"预算管理",
+          "key":"0-3",
+          "isLeaf":true,
+          "id":"0-3",
+        }
+      ]
+    }],
+unfinished:[{
+    id:'1',
+    status:'运行中',
+    expandPeriod:'正常',
+    flow:'张三的通信报销审批',
+    createTime:'2017-03-01 21:42:28',
+    creator:'张三',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170301123',
+    department:'平台技术部',
+  }, {
+    id:'2',
+    status:'运行中',
+    expandPeriod:'正常',
+    flow:'李四的通信报销审批',
+    createTime:'2017-03-02 21:42:28',
+    creator:'李四',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170302123',
+    department:'平台技术部',
+  }],
+finished:[{
+    id:'1',
+    status:'完成',
+    expandPeriod:'正常',
+    flow:'李雪的通信报销审批',
+    createTime:'2017-02-01 21:42:28',
+    creator:'李雪',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170201123',
+    department:'平台技术部',
+  }, {
+    id:'2',
+    status:'完成',
+    expandPeriod:'正常',
+    flow:'段三的通信报销审批',
+    createTime:'2017-02-02 21:42:28',
+    creator:'段三',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170202123',
+    department:'平台技术部',
+  }], 
+  allData:[{
+    id:'1',
+    status:'运行中',
+    expandPeriod:'正常',
+    flow:'张三的通信报销审批',
+    createTime:'2017-03-01 21:42:28',
+    creator:'张三',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170301123',
+    department:'平台技术部',
+  }, {
+    id:'2',
+    status:'运行中',
+    expandPeriod:'正常',
+    flow:'李四的通信报销审批',
+    createTime:'2017-03-02 21:42:28',
+    creator:'李四',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170302123',
+    department:'平台技术部',
+  },{
+    id:'3',
+    status:'完成',
+    expandPeriod:'正常',
+    flow:'李雪的通信报销审批',
+    createTime:'2017-02-01 21:42:28',
+    creator:'李雪',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170201123',
+    department:'平台技术部',
+  }, {
+    id:'4',
+    status:'完成',
+    expandPeriod:'正常',
+    flow:'段三的通信报销审批',
+    createTime:'2017-02-02 21:42:28',
+    creator:'段三',
+    endTime:'',
+    model:'通信报销审批',
+    documentNum:'20170202123',
+    department:'平台技术部',
+  }], 
+}
+export default flowJson;

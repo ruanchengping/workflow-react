@@ -1,0 +1,242 @@
+body{background: #eaf0f3}
+body.bodybg{font-family:"microsoft yahei"}
+/*交错渐变背景*/
+.bodybg1:before{
+  z-index:-2;
+  content:"";
+  display:block;
+  width:100%;
+  height:70px;
+  position:absolute;
+  top:0;
+  left:0;
+  background-image:linear-gradient(-90deg, #4f8aee 3%, #2a5bb5 100%)
+}
+/*滚动条*/
+::-webkit-scrollbar{width:8px;height:8px;}
+div::-webkit-scrollbar,ul::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-track{background:rgba(0,0,0,0)}
+::-webkit-scrollbar-thumb{border-radius:5px;background:rgba(0,0,0,0.2);}
+
+/*侧栏导航样式覆盖*/
+.ant-menu, .ant-menu-inline,  .ant-menu-item>a{
+font-size:13px;
+}
+.ant-menu-sub.ant-menu-inline > .ant-menu-item>a{
+  font-size:12px;
+  color:#9a9a9a;
+}
+.ant-menu-inline, .ant-menu-vertical {
+  border-right: none;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #f3f3f3;
+}
+.ant-menu-item-selected {
+  color: #666;
+}
+
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
+  color: #000000;
+}
+
+.ant-menu-inline .ant-menu-item:after, .ant-menu-vertical .ant-menu-item:after {
+  border-right: 3px solid #4E92F5;
+  right: 99%;
+}
+.ant-layout{
+  background:none;
+}
+.ant-menu{
+  background:none;
+}
+a:hover{
+  text-decoration:none;
+}
+.ant-layout-sider {
+  position: inherit;
+}
+/*.ant-menu-item .anticon, .ant-menu-submenu-title .anticon, .ant-menu-submenu-title .anticon{*/
+  /*margin-right: 20px;*/
+/*}*/
+
+.ant-menu-inline-collapsed > .ant-menu-item .anticon{
+  font-size: 16px;
+  margin-left: 8px;
+}
+.ant-layout-sider-collapsed .anticon {
+  font-size: 16px;
+  margin-left: 8px;
+}
+ .ant-layout-sider-collapsed .anticon+span {
+  display: none;
+}
+ .ant-layout-sider-collapsed .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+  display: none;
+}
+ /*识别折叠状态下的图标及文字样式*/
+.scroll{
+  height:calc(100vh - 90px);
+  overflow:scroll;
+  overflow-x:hidden;
+}
+.show{
+  overflow: visible;
+}
+.show .ant-menu-item>a{
+  color:transparent;
+}
+.show .ant-menu-item > a .anticon{
+  color:#666;
+}
+.ant-menu-sub.ant-menu-vertical  > .ant-menu-item>a{
+  font-size:12px;
+  color:#9a9a9a;
+}
+
+/*折叠展开标题文字样式*/
+
+.topmenu{
+  width: 200px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  word-break: normal;
+  word-wrap: normal;
+  overflow: hidden;
+}
+.show .topmenu{
+  width: 47px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  word-break: normal;
+  word-wrap: normal;
+  overflow: hidden;
+}
+/*识别折叠状态下的图标及文字样式///*/
+
+/*单行溢出折行*/
+.home_timeline_item>.ant-timeline-item-content {
+  white-space: nowrap;
+}
+/*单行溢出省略 首页ul列表*/
+.home_timeline_item>.ant-timeline-item-content{
+white-space: nowrap;
+text-overflow: ellipsis;
+width: 428px;
+overflow: hidden;
+}
+/*timeline*/
+.home_timeline_item>.ant-timeline-item-tail {
+  left: 156px;
+}
+.home_timeline_item>.ant-timeline-item-head{
+  left: 152px;
+}
+
+.home_timeline_item>.ant-timeline-item-content:hover {
+  color: #068ae8;
+}
+/*右侧tab切换*/
+.ant-tabs-nav{
+  float: right;
+}
+
+/*三个弹出菜单 功能选择 等*/
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background: none;
+  border:none;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item{
+  background: none;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:not(:nth-child(1))>div{
+  margin-left: 30px;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item-selected:first-child::after{
+  display:none;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item-selected:after{
+  content:'\E632';
+  display: block;
+  font-family: anticon!important;
+  color:#1565c0;
+  font-size: 20px;
+  position: absolute;
+  right:20px;
+  border:none;
+  transition: none;
+}
+.favorites.ant-menu-inline .ant-menu-item:after{
+  border:none;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(2)::before,
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(3)::before,
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(4)::before,
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(5)::before,
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(6)::before,
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(7)::before{
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 20px;
+  border: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  line-height: 24px;
+  text-align: center;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(2)::before{
+  content: '1';
+  background: #1565c0;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(3)::before{
+  content: '2';
+  background: #1976d2;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(4)::before{
+  content: '3';
+  background: #1e88e5;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(5)::before{
+  content: '4';
+  background: #2196f3;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(6)::before{
+  content: '5';
+  background: #42a5f5;
+}
+.ant-menu.favorites:not(.ant-menu-horizontal) .ant-menu-item:nth-child(7)::before{
+  content: '6';
+  background: #64b5f6;
+}
+/*smalltable边框*/
+.ant-table-small {
+  border: none;
+  border-bottom: 1px solid #e9e9e9;
+}
+.ant-table-small .ant-table-thead > tr > th {
+  background: #f3f3f3;
+}
+.ant-table-small .ant-table-header > table, .ant-table-small .ant-table-body > table{
+  padding:0;
+}
+
+/*侧栏展开弹出*/
+.siderModal>.ant-modal-content{
+  box-shadow: none;
+  border-radius: 0;
+}
+.siderModal>.ant-modal-content>.ant-modal-body{
+  padding:0;
+}
+.siderModal{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+button:active{
+  outline:none;
+}

@@ -1,0 +1,16 @@
+.element.basic.Circle circle {
+    -webkit-svg-shadow: 2px 2px 5px black;
+    stroke: none;
+    opacity: .5;
+}
+.element.basic.Circle text {
+    font-size: 7px;
+    fill: black;
+    text-shadow: 1px 1px 1px white;
+}
+.orbit {
+    stroke: gray;
+    fill: none;
+    pointer-events: none;
+    opacity: .2;
+}
